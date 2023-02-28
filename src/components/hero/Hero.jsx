@@ -13,14 +13,25 @@ const Hero = () => {
         <div className='hero'>
             <div className="navbar-container">
                 <div className='logo'>
-                    <Link>TC</Link>
+                    <Link></Link>
                 </div>
                 <div className='items-container'>
+
+                    <div className='hamburger'>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+
+
                     <ul className='items'>
                         <li className='item'><Link><ImHome /> Home</Link></li>
                         <li className='item'><Link><BsPersonCircle /> About</Link></li>
                         <li className='item'><Link><FaBox /> Projects</Link></li>
                         <li className='item'><Link><BsFileEarmarkText /> Resume</Link></li>
+                        <li className='item contact'><Link>Contact Me</Link></li>
                     </ul>
                 </div>
             </div >
