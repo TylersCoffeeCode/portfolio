@@ -7,6 +7,7 @@ import { BsFileEarmarkText } from 'react-icons/bs'
 import { TfiDownload } from 'react-icons/tfi'
 import { SlSocialLinkedin } from 'react-icons/sl'
 import { VscGithub } from 'react-icons/vsc'
+import { SlArrowDown } from 'react-icons/sl'
 
 const Hero = () => {
     return (
@@ -23,7 +24,6 @@ const Hero = () => {
                         <span></span>
                         <span></span>
                     </div>
-
 
 
                     <ul className='items'>
@@ -48,6 +48,10 @@ const Hero = () => {
                     <button className='cv-btn btn'>Download CV <TfiDownload /></button>
                     </h3>
                 </div>
+            </div>
+            <div className='scroll-btn-div'> 
+                <div className='scroll-btn'><SlArrowDown /></div>
+             
             </div>
         </div>
     )
