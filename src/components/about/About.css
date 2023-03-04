@@ -1,5 +1,6 @@
 .about {
-    background-color: rgb(69, 15, 157);
+    /* background-color: rgb(29, 3, 57); */
     width: 100%;
     height: 100vh;
+    border: 2px solid white;
 }
