@@ -4,7 +4,7 @@
     height: 100vh;
     /* border: 2px solid white; */
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 }
 
@@ -13,7 +13,7 @@
     flex-wrap: wrap;
     justify-content: center;
     background-color: rgb(96, 21, 167);
-    width: 50%;
+    width: 30%;
     height: 80%;
     margin-right: 2rem;
     border-radius: 20px;
@@ -47,9 +47,9 @@
 }
 
 .skill-card-title {
+    /* background-color: antiquewhite; */
     width: 100%;
     height: 20%;
-    /* background-color: antiquewhite; */
     color: white;
     display: flex;
     justify-content: center;
@@ -82,24 +82,27 @@
 }
 
 .i {
-    font-size: 5rem;
+    font-size: 4rem;
+    width: 100%;
 }
 
 
 
 .skillH4 {
     color: white;
+    text-align: center;
 }
 
 .about-right {
     height: 80%;
-    width: 40%;
+    width: 30%;
     background-color: rgb(54, 7, 104);
     border-radius: 20px;
     margin-right: 3rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-content: flex-start;
 }
 
 .about-title {
@@ -108,6 +111,7 @@
     /* background-color: aqua; */
     width: 80%;
     height: 100px;
+    margin-bottom: 2rem;
 }
 
 .about-title-text {
@@ -117,11 +121,93 @@
 
 .about-content-div {
     height: 500px;
-    width: 80%;
+    width: 100%;
     /* background-color: beige; */
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
 }
 
-.about-content {
+
+.tabs-div {
+    /* background-color: sandybrown; */
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tabs {
+    background-color: rgb(77, 17, 134);
+    height: 100%;
+    width: 32%;
     color: white;
-    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.tabs:hover {
+    box-shadow: inset 200px 0 0 0 #06C167;
+} 
+
+.activeTab {
+    display: contents;
+    background-color: rgb(96, 21, 167);
+    height: 100%;
+    width: 33%;
+    color: #06C167;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: #06C167 1px solid;
+}
+
+.activeTab:hover {
+    box-shadow: none;
+}
+
+.about-text {
+    background-color:rgb(96, 21, 167);
+    width: 100%;
+    height: 100%;
+    padding-bottom: 2rem;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+.text {
+    display: none;
+}
+
+.activeText {
+    display: contents;
+    color: white;
+}
+
+.activeText h4 {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+
+.activeText p {
+    text-align: center;
+    margin: 0 1rem 1rem 1rem;
+}
+
+
+.activeText img {
+    /* background-color: #06C167; */
+    width: 250px;
+    height: 250px;
 }

@@ -5,7 +5,7 @@
 }
 
 .app {
-  height: 500vh;
+  height: 400vh;
   width: 100vw;
   /* background-image: url(./assets/img/bg/abstract.jpg); */
   background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(74,27,122,1) 75%, rgba(84,0,171,1) 100%);

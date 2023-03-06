@@ -11,10 +11,18 @@ import { SiVisualstudio } from 'react-icons/si'
 import { SiInsomnia } from 'react-icons/si'
 import { SiPostman } from 'react-icons/si'
 import { FaGitAlt } from 'react-icons/fa'
-import { AiFillGithub } from 'react-icons/ai'
+import { useState } from 'react'
+import dev from '../../assets/img/dev.png'
 
 
 const About = () => {
+
+  const [toggleState, setToggleState] = useState(1);
+
+  const toggleTab = (index) => {
+    setToggleState(index)
+  }
+
   return (
     <div className='about'>
       <div className='skills-left'>
@@ -30,66 +38,66 @@ const About = () => {
             </div>
             <div className='skill-card-skills'>
               <div className='skill-li'>
-                  <AiFillHtml5 className='i' style={{color: '#e34c26'}}/>
-                  <h4 className='skillH4'>HTML</h4>
+                <AiFillHtml5 className='i' style={{ color: '#e34c26' }} />
+                <h4 className='skillH4'>HTML</h4>
               </div>
               <div className='skill-li'>
-                  <IoLogoCss3 className='i' style={{color: '#264de4'}}/>
-                  <h4 className='skillH4'>CSS</h4>
+                <IoLogoCss3 className='i' style={{ color: '#264de4' }} />
+                <h4 className='skillH4'>CSS</h4>
               </div>
               <div className='skill-li'>
-                  <IoLogoJavascript className='i' style={{color: '#F0DB4F'}}/>
-                  <h4 className='skillH4'>JavaScript</h4>
+                <IoLogoJavascript className='i' style={{ color: '#F0DB4F' }} />
+                <h4 className='skillH4'>JavaScript</h4>
               </div>
-              <div className='skill-li' style={{color: '#61dbfb'}}>
-                  <FaReact className='i'/>
-                  <h4 className='skillH4'>React</h4>
-              </div>
-            </div>
-          </div>
-          <div className='skill-card'>
-          <div className='skill-card-title'>
-              <h3 className='skill-title-text'>Back End</h3>
-            </div>
-            <div className='skill-card-skills'>
-              <div className='skill-li'>
-                  <IoLogoNodejs className='i' style={{color: '#68a063'}}/>
-                  <h4 className='skillH4'>Node JS</h4>
-              </div>
-              <div className='skill-li'>
-                  <SiExpress className='i' style={{color: '#000000'}}/>
-                  <h4 className='skillH4'>Express JS</h4>
-              </div>
-              <div className='skill-li'>
-                  <SiMongodb className='i' style={{color: '#4DB33D'}}/>
-                  <h4 className='skillH4'>MongoDB</h4>
-              </div>
-              <div className='skill-li'>
-                  <SiPostgresql className='i' style={{color: '#0064a5'}}/>
-                  <h4 className='skillH4'>PostgreSQL</h4>
+              <div className='skill-li' style={{ color: '#61dbfb' }}>
+                <FaReact className='i' />
+                <h4 className='skillH4'>React</h4>
               </div>
             </div>
           </div>
           <div className='skill-card'>
             <div className='skill-card-title'>
-              <h3 className='skill-title-text'>Front End</h3>
+              <h3 className='skill-title-text'>Back End</h3>
             </div>
             <div className='skill-card-skills'>
               <div className='skill-li'>
-                  <SiVisualstudio className='i' style={{color: '#0078d7'}}/>
-                  <h4 className='skillH4'>VS Code</h4>
+                <IoLogoNodejs className='i' style={{ color: '#68a063' }} />
+                <h4 className='skillH4'>Node JS</h4>
               </div>
               <div className='skill-li'>
-                  <SiPostman className='i' style={{color: '#ef5b25'}}/>
-                  <h4 className='skillH4'>PostMan</h4>
+                <SiExpress className='i' style={{ color: '#000000' }} />
+                <h4 className='skillH4'>Express JS</h4>
               </div>
               <div className='skill-li'>
-                  <SiInsomnia className='i' style={{color: '#080135'}}/>
-                  <h4 className='skillH4'>Insomnia</h4>
+                <SiMongodb className='i' style={{ color: '#4DB33D' }} />
+                <h4 className='skillH4'>MongoDB</h4>
               </div>
               <div className='skill-li'>
-                  <FaGitAlt className='i' style={{color: '#F1502F'}}/>
-                  <h4 className='skillH4'>Git + GitHub</h4>
+                <SiPostgresql className='i' style={{ color: '#0064a5' }} />
+                <h4 className='skillH4'>PostgreSQL</h4>
+              </div>
+            </div>
+          </div>
+          <div className='skill-card'>
+            <div className='skill-card-title'>
+              <h3 className='skill-title-text'>Tools</h3>
+            </div>
+            <div className='skill-card-skills'>
+              <div className='skill-li'>
+                <SiVisualstudio className='i' style={{ color: '#0078d7' }} />
+                <h4 className='skillH4'>VS Code</h4>
+              </div>
+              <div className='skill-li'>
+                <SiPostman className='i' style={{ color: '#ef5b25' }} />
+                <h4 className='skillH4'>PostMan</h4>
+              </div>
+              <div className='skill-li'>
+                <SiInsomnia className='i' style={{ color: '#080135' }} />
+                <h4 className='skillH4'>Insomnia</h4>
+              </div>
+              <div className='skill-li'>
+                <FaGitAlt className='i' style={{ color: '#F1502F' }} />
+                <h4 className='skillH4'>Git + GitHub</h4>
               </div>
             </div>
           </div>
@@ -102,10 +110,52 @@ const About = () => {
           </h2>
         </div>
         <div className='about-content-div'>
-          <p className='about-content'>
-            I am a passionate software engineer bringing technical expertise, adaptability, and a love for learning to any development role.
-            Driven to make a positive impact, and offer innovative solutions to real-world problems.
-          </p>
+          <div className='tabs-div'>
+            <div className={toggleState === 1 ? "tabs activeTab" : "tabs"} onClick={() => toggleTab(1)}>
+              <h3>About Me</h3>
+            </div>
+
+            <div className={toggleState === 2 ? "tabs activeTab" : "tabs"} onClick={() => toggleTab(2)}>
+              <h3>My Journey</h3>
+            </div>
+
+            <div className={toggleState === 3 ? "tabs activeTab" : "tabs"} onClick={() => toggleTab(3)}>
+              <h3>Get to Know Me</h3>
+            </div>
+
+
+          </div>
+
+          <div className='about-text'>
+            <div className={toggleState === 1 ? "text activeText" : "text"}>
+              <h4>Who I am</h4>
+              <p>I am a passionate software engineer bringing technical expertise, adaptability, and a love for learning to any development role. Driven to make a positive impact, and offer innovative solutions to real-world problems. </p>
+              <p>I am a strong communicator and collaborator, and believe that open and honest communication is key to the success of any project.</p>
+              <img src={dev}/>
+            </div>
+            <div className={toggleState === 2 ? "text activeText" : "text"}>
+              <h4>From Techie to Developer</h4>
+              <p>My journey in tech began long before I ever wrote my first line of code. For as long as I can remember, I've been fascinated with technology, always eager to explore and learn more. It wasn't until recently, that I decided to take the plunge into the world of programming.
+              </p>
+              <p>
+                I was fortunate enough to learn from some of the best instructors in the industry through a rigorous coding bootcamp. The experience taught me not only the technical skills necessary to succeed in this field, but also how to be a fast learner in any environment. I'm always eager to take on new challenges and push myself to grow as a developer.
+              </p>
+              <p>
+                While I may not have years of experience under my belt, I make up for it with my tenacity and hard work. When I set my mind to something, I don't stop until I've accomplished it. This attitude has served me well as I've navigated the complexities of learning to code, and it's a mindset that I bring to everything I do.
+              </p>
+
+              <p>
+                As I continue on this journey, I'm excited to see where it takes me and the impact that I can make with the skills that I've acquired.</p>
+            </div>
+            <div className={toggleState === 3 ? "text activeText" : "text"}>
+              <h4>Nerd Alert Side Story:< br />My Favorite Hobbies and Habits</h4>
+              <p>When I'm not busy coding, you can find me pursuing a variety of hobbies and interests. I love building computers and tinkering with hardware, always on the lookout for the latest and greatest tech. In my free time, I've also been learning Japanese and Tagalog, which has been an exciting and rewarding journey.</p>
+
+              <p> Of course, I can't forget about my furry companion - my dog is a huge part of my life, and I'm constantly striving to give him the best pampered doggie life possible. When I'm not busy with my dog or learning a new language, you'll probably find me with my nose buried in a book. I love all types of literature, from fiction to non-fiction and even manga.</p>
+
+              <p> But if there's one hobby that truly captures my passion, it's gaming. I'm a competitive gamer at heart, and I love nothing more than diving into complex and exciting games. Whether it's a classic title or the latest release, I'm always up for a challenge.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
