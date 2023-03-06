@@ -2,9 +2,9 @@ import './Contact.css'
 import { FiPhoneCall } from 'react-icons/fi'
 import { AiOutlineMail } from 'react-icons/ai'
 
-const Contact = () => {
+const Contact = ({id}) => {
   return (
-    <div className='contact-page-ctn'>
+    <div className='contact-page-ctn' id={id}>
         <div className='contact-div'>
             <div className='contact-title-div'>
                 <h2>Contact Me</h2>

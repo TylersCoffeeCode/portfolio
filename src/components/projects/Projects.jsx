@@ -6,9 +6,9 @@ import blackJack from '../../assets/img/blackJack.png'
 
 
 
-const Projects = () => {
+const Projects = ({id}) => {
   return (
-    <div className='projects-page-ctn'>
+    <div className='projects-page-ctn' id={id}>
         <div className='projects-page-title-div'>
             <h3>Projects</h3>
         </div>

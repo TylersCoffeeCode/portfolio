@@ -9,9 +9,9 @@ import { SlSocialLinkedin } from 'react-icons/sl'
 import { VscGithub } from 'react-icons/vsc'
 import { SlArrowDown } from 'react-icons/sl'
 
-const Hero = () => {
+const Hero = ({onNavClick}) => {
     return (
-        <div className='hero'>
+        <div className='hero' id='hero'>
             <div className="navbar-container">
                 <div className='logo'>
                     <Link></Link>
@@ -27,11 +27,11 @@ const Hero = () => {
 
 
                     <ul className='items'>
-                        <li className='item'><Link><ImHome /> Home</Link></li>
-                        <li className='item'><Link><BsPersonCircle /> About</Link></li>
-                        <li className='item'><Link><FaBox /> Projects</Link></li>
+                        <li className='item'><Link onClick={()=> onNavClick('hero')}><ImHome /> Home</Link></li>
+                        <li className='item'><Link onClick={()=> onNavClick('about')}><BsPersonCircle /> About</Link></li>
+                        <li className='item'><Link onClick={()=> onNavClick('projects')}><FaBox /> Projects</Link></li>
                         <li className='item'><Link><BsFileEarmarkText /> Resume</Link></li>
-                        <li className='item contact'><Link>Contact Me</Link></li>
+                        <li className='item contact'><Link onClick={()=> onNavClick('contact')}>Contact Me</Link></li>
                     </ul>
                 </div>
             </div >
