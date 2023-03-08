@@ -1,5 +1,5 @@
 import './Projects.css'
-import horizon from '../../assets/img/horizonImg.png'
+import horizon from '../../assets/img/horizon.png'
 import park from '../../assets/img/park.png'
 import tic from '../../assets/img/tic.png'
 import blackJack from '../../assets/img/blackJack.png'
