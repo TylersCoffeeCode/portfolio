@@ -1,6 +1,6 @@
 .contact-page-ctn {
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     /* background-color: rgba(96, 21, 167, 0.5); */
     display: flex;
     justify-content: center;
@@ -98,4 +98,11 @@ form button {
 
 form button:hover {
     background-color: rgb(77, 17, 134);
+}
+
+
+
+
+@media screen and (max-width: 1000px) {
+    .contact-page-ctn {}
 }

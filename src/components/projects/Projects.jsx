@@ -52,14 +52,14 @@ const Projects = ({id}) => {
                     <img src={blackJack} alt="" />
                 </div>
                 <div className='project-info-title'>
-                    <h3>Horizon Travel</h3>
+                    <h3>Black Jack</h3>
                 </div>
                 <div className='project-info-details'>
                     <div className='project-info-text'>
                         <h4>Technologies Used</h4>
                         <p>React | MongoDB | Express | HTML | CSS | JavaScript</p>
                         <h4>Description</h4>
-                        <p>Create a travel itinerary to anywhere in the world!</p>
+                        <p>Play a high stakes game of black jack!</p>
                         <h4> </h4>
                     </div>
                 </div>
@@ -69,14 +69,14 @@ const Projects = ({id}) => {
                     <img src={tic} alt="" />
                 </div>
                 <div className='project-info-title'>
-                    <h3>Horizon Travel</h3>
+                    <h3>Tic Tac Toe</h3>
                 </div>
                 <div className='project-info-details'>
                     <div className='project-info-text'>
                         <h4>Technologies Used</h4>
                         <p>React | MongoDB | Express | HTML | CSS | JavaScript</p>
                         <h4>Description</h4>
-                        <p>Create a travel itinerary to anywhere in the world!</p>
+                        <p>A simple JavaScript application to play the classic game of tic tac toe</p>
                         <h4> </h4>
                     </div>
                 </div>
