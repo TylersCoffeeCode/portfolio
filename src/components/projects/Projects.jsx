@@ -18,7 +18,7 @@ const Projects = ({id}) => {
             description: 'Discover a mouth-watering world of culinary delights with our user-generated recipe platform, where you can not only explore a vast array of recipes but also create your own unique dishes to share with others by simply signing up for an account with JWT Auth.',
             links: {
                 githubFront: 'https://github.com/AdamMontemurro/sous_chef_client',
-                deployed: 'https://sous-chef-app.herokuapp.com/'
+                live: 'https://sous-chef-app.herokuapp.com/'
             } 
         },
         {
@@ -28,7 +28,7 @@ const Projects = ({id}) => {
             description: 'Create a travel itinerary to anywhere in the world!',
             links: {
                 githubFront: 'https://github.com/TylersCoffeeCode/Trip-Planner',
-                deployed: 'https://horizon-trip-planner.herokuapp.com/'
+                live: 'https://horizon-trip-planner.herokuapp.com/'
             } 
         },
         {
@@ -38,7 +38,7 @@ const Projects = ({id}) => {
             description: 'A small database of abandonded amusment parks and their stories.',
             links: {
                 githubFront: 'https://github.com/ap2121/Theme-Park-2',
-                deployed: 'https://vaca-n-tion.herokuapp.com/'
+                live: 'https://vaca-n-tion.herokuapp.com/'
             } 
         },
         {
@@ -48,17 +48,17 @@ const Projects = ({id}) => {
             description: 'Play a high stakes game of black jack!',
             links: {
                 githubFront: 'https://github.com/TylersCoffeeCode/BlackJack',
-                deployed: 'https://blackjacktcc.surge.sh/'
+                live: 'https://blackjacktcc.surge.sh/'
             } 
         },
         {
-            projectName: 'Tic Tac Toe',
+            projectName: 'Tic-Tac-Toe',
             img: tic,
             technologyUsed: 'HTML, CSS, JavaScript',
             description: 'A simple JavaScript application to play the classic game of tic tac toe',
             links: {
                 githubFront: 'https://github.com/AdamMontemurro/sous_chef_client',
-                deployed: 'https://sous-chef-app.herokuapp.com/'
+                live: 'https://blackjacktcc.surge.sh/'
             } 
         }
     ]
@@ -79,7 +79,7 @@ const Projects = ({id}) => {
                     <h2>{project.projectName}</h2>
                     <h4>{project.technologyUsed}</h4>
                     <p>{project.description}</p>
-                    <p>Links:&ensp; <a href={project.links.githubFront}>GitHub</a>&ensp;<a href={project.links.deployed}>Deployed</a></p>
+                    <p>Links:&ensp; <a href={project.links.githubFront}>GitHub</a>&ensp;<a href={project.links.live}>Live</a></p>
                 </div>
             ))}
             </div>

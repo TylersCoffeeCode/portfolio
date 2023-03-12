@@ -24,7 +24,7 @@
 .projectDiv {
     width: 550px;
     height: 20%;
-    /* background-color: darkmagenta; */
+    background-color: darkmagenta;
     margin-top: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
@@ -32,7 +32,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-content: flex-start;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
 }
 
 .projectDiv h2 {
@@ -54,13 +54,10 @@
     transition: 1s;
 }
 
-.projectDiv img:hover {
-    transform: scale(1.3);
-}
-
 .projectDiv h4 {
     color: white;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 .projectDiv p {
@@ -70,6 +67,7 @@
     text-align: center;
     width: 100%;
     color: white;
+    margin-bottom: 1rem;
 }
 
 .projectDiv a {
