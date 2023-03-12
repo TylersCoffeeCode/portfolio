@@ -14,12 +14,13 @@ const Contact = ({id}) => {
                 <p><AiOutlineMail className='ic'/> coatsctyler@gmail.com</p>
             </div>
             <div className='contact-form-div'>
-                <form action="onSubmit">
+                <form action="https://formsubmit.co/coatsctyler@gmail.com" className='form' method="POST">
+                    <input type="hidden" name='_subject' value="New Email From Portfolio"/>
                     <input type="text" name="name" id="name" placeholder='Full Name'/>
-                    <input type="email" name="email" id="email" placeholder='Email'/>
+                    <input type="email" name="email" id="email" placeholder='Email' required/>
                     <input type="tel" name="phone" id="phone" placeholder='Phone'/>
                     <textarea type="text" name="text" id="text" placeholder='Message'/>
-                    <button>Submit</button>
+                    <button type='submit'>Submit</button>
                 </form>
             </div>
         </div>

@@ -7,6 +7,7 @@ import { FaBox } from 'react-icons/fa'
 import { BsFileEarmarkText } from 'react-icons/bs'
 import { useState, useEffect } from 'react';
 import { FaPhoneSquareAlt } from 'react-icons/fa'
+import pdf from '../../assets/TylerCoatsResume.pdf'
 
 
 const SideBar = ({ onNavClick }) => {
@@ -35,7 +36,7 @@ const SideBar = ({ onNavClick }) => {
                         <Link onClick={()=> onNavClick('contact')}>Contact Me</Link>
                     </li>
                     <li className="item">
-                        <Link>Resume</Link>
+                        <a href={pdf} target="_blank">Resume</a>
                     </li>
                 </ul>
             </div>
@@ -44,7 +45,7 @@ const SideBar = ({ onNavClick }) => {
                 <Link onClick={() => onNavClick('hero')} className="menu-item"><ImHome /> Home</Link>
                 <Link onClick={() => onNavClick('about')} className="menu-item"><BsPersonCircle /> About</Link>
                 <Link onClick={() => onNavClick('projects')} className="menu-item"><FaBox /> Projects</Link>
-                <Link><BsFileEarmarkText /> Resume</Link>
+                <a href={pdf} target="_blank"><BsFileEarmarkText />Resume</a>
                 <Link onClick={() => onNavClick('contact')}>Contact Me</Link>
             </Menu>
         </nav>

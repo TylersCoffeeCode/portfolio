@@ -1,7 +1,7 @@
 .contact-page-ctn {
     width: 100%;
     height: 100vh;
-    /* background-color: rgba(96, 21, 167, 0.5); */
+    /* background-color: rgba(185, 192, 63, 0.5); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,7 +22,7 @@
 
 .contact-title-div h2 {
     font-size: 2rem;
-    color: white;
+    color: #06C167;
     margin: 1rem 0 1rem 0;
 }
 
@@ -103,6 +103,54 @@ form button:hover {
 
 
 
-@media screen and (max-width: 1000px) {
-    .contact-page-ctn {}
+@media screen and (max-width: 870px) {
+.contact-div {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.contact-title-div {
+    margin-bottom: 1rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    /* background-color: #06C167; */
+}
+
+.contact-title-div h2 {
+    width: 100%;
+}
+
+.contact-title-div h3 {
+    width: 100%;
+    margin: 0;
+}
+
+
+.contact-title-div p {
+    /* background-color: firebrick; */
+    width: 100%;
+    margin-bottom: 0rem;
+}
+
+.contact-form-div {
+    /* background-color: #06C167; */
+    margin-bottom: 1rem;
+}
+
+
+.form input {
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
+
+.form textarea {
+    margin-bottom: 1rem;
+}
+
 }

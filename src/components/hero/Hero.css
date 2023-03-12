@@ -108,6 +108,10 @@ a:hover {
     color: white;
 }
 
+.btn a {
+    color: #06C167;
+}
+
 .linked-in-btn {
     border: 0.1em solid white;
     color: #06C167;
@@ -146,7 +150,7 @@ a:hover {
     top: 20px;
     cursor: pointer;
     position: absolute;
-    background-color: red;
+    background-color: #06C167;
     display: none;
   }
 
@@ -167,10 +171,9 @@ a:hover {
     position: absolute;
     display: flex;
     bottom: 0;
-    right: 45%;
     margin-bottom: 5rem;
     /* background-color: antiquewhite; */
-    width: 200px;
+    width: 100%;
     height: 50px;
     transition: 0.5s;
     justify-content: center;
@@ -269,6 +272,11 @@ a:hover {
 
     a {
         display: none;
+    }
+
+    .projectDiv a {
+        display: contents;
+        text-decoration: underline;
     }
     
     

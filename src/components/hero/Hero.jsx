@@ -9,6 +9,8 @@ import { TfiDownload } from 'react-icons/tfi'
 import { SlSocialLinkedin } from 'react-icons/sl'
 import { VscGithub } from 'react-icons/vsc'
 import { SlArrowDown } from 'react-icons/sl'
+import pdf from '../../assets/TylerCoatsResume.pdf'
+
 
 const Hero = ({ onNavClick }) => {
 
@@ -33,21 +35,15 @@ const Hero = ({ onNavClick }) => {
                         Transforming ideas into digital realities, one line of code at a
                         time
                         <br />
-                        <button className="linked-in-btn btn">
-                            Linked<SlSocialLinkedin />
-                        </button>
-                        <button className="github-btn btn">
-                            GitHub <VscGithub />
-                        </button>
-                        <button className="cv-btn btn">
-                            Download CV <TfiDownload />
-                        </button>
+                        <a href='https://www.linkedin.com/in/tylerccoats/' target="_blank"><button className="linked-in-btn btn">Linked<SlSocialLinkedin /></button></a>
+                        <a href='https://github.com/TylersCoffeeCode' target="_blank"><button className="github-btn btn">GitHub <VscGithub /> </button></a>
+                        <a href={pdf} target="_blank"><button className="cv-btn btn">Download CV <TfiDownload /></button></a>
                     </h3>
                 </div>
             </div>
             <div className="scroll-btn-div">
                 <div className="scroll-btn">
-                    <SlArrowDown />
+                    <Link onClick={() => onNavClick('about')}><SlArrowDown /></Link>
                 </div>
             </div>
         </div>
