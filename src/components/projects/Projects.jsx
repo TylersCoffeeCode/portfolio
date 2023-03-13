@@ -79,7 +79,7 @@ const Projects = ({id}) => {
                     <h2>{project.projectName}</h2>
                     <h4>{project.technologyUsed}</h4>
                     <p>{project.description}</p>
-                    <p>Links:&ensp; <a href={project.links.githubFront}>GitHub</a>&ensp;<a href={project.links.live}>Live</a></p>
+                    <p>Links:&ensp; <a href={project.links.githubFront}>GitHub</a>&ensp;<a href={project.links.live}>Live </a></p>
                 </div>
             ))}
             </div>
