@@ -2,6 +2,7 @@
     /* background-color: rgb(29, 3, 57); */
     width: 100%;
     height: 100vh;
+    margin-bottom: 10rem;
     /* border: 2px solid white; */
     display: flex;
     justify-content: center;
@@ -355,5 +356,18 @@
         min-width: 320px;
     }
     
+
+}
+
+
+@media  screen and (max-height:620px){
+    .about {
+        height: 150vh;
+    }
+
+    .skills-left .about-right { 
+        height: 100vh;
+
+    }
 
 }

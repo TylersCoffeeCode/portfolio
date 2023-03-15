@@ -268,5 +268,13 @@ a:hover {
 
 
   
-
-  
+@media screen and (max-height: 415px) {
+    .about {
+        margin-bottom: 10rem;
+        height: 200vh;
+    }
+    .skills-left, .about-right {
+        height: 150vh;
+        padding-bottom: 1rem;
+    }
+}

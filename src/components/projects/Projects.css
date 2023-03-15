@@ -76,3 +76,11 @@
     text-decoration: underline;
 }
 
+@media screen and (max-height: 620px) {
+    .projects {
+        height: auto;
+        margin-bottom: 10rem
+    }
+}
+
+
