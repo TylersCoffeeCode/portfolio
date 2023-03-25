@@ -18,7 +18,7 @@ const Projects = ({id}) => {
             description: 'Discover a mouth-watering world of culinary delights with our user-generated recipe platform, where you can not only explore a vast array of recipes but also create your own unique dishes to share with others by simply signing up for an account with JWT Auth.',
             links: {
                 githubFront: 'https://github.com/AdamMontemurro/sous_chef_client',
-                live: 'https://sous-chef-app.herokuapp.com/'
+                live: 'https://sous-chef-fe.herokuapp.com/'
             } 
         },
         {

@@ -24,12 +24,15 @@
 }
 
 .contact-title-div h2 {
+    /* background-color: aliceblue; */
     font-size: 2rem;
     color: #06C167;
     margin: 1rem 0 1rem 0;
+    width: 100%;
 }
 
 .contact-title-div h3 {
+    /* background-color: bisque; */
     font-size: 1.2rem;
     color: white;
     margin: 1rem 0 1rem 0;
