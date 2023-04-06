@@ -4,6 +4,7 @@ import park from '../../assets/img/park.png'
 import tic from '../../assets/img/tic.png'
 import blackJack from '../../assets/img/blackJack.png'
 import sousChef from '../../assets/img/sousChef.png'
+import eSports from '../../assets/img/Esports.png'
 
 
 
@@ -11,6 +12,16 @@ import sousChef from '../../assets/img/sousChef.png'
 const Projects = ({id}) => {
 
     const projects = [
+        {
+            projectName: 'Esports Delight(Work-in-Progress)',
+            img: eSports,
+            technologyUsed: 'React | PostgreSQL | Express | Node | JavaScript',
+            description: 'Discover a mouth-watering world of culinary delights with our user-generated recipe platform, where you can not only explore a vast array of recipes but also create your own unique dishes to share with others by simply signing up for an account with JWT Auth.',
+            links: {
+                githubFront: 'https://github.com/TylersCoffeeCode/Esports-delight',
+                live: 'https://esports-delight-be.herokuapp.com/'
+            } 
+        },
         {
             projectName: 'Sous Chef',
             img: sousChef,
@@ -58,7 +69,6 @@ const Projects = ({id}) => {
             description: 'A simple JavaScript application to play the classic game of tic tac toe',
             links: {
                 githubFront: 'https://github.com/AdamMontemurro/sous_chef_client',
-                live: 'https://blackjacktcc.surge.sh/'
             } 
         }
     ]
@@ -79,7 +89,7 @@ const Projects = ({id}) => {
                     <h2>{project.projectName}</h2>
                     <h4>{project.technologyUsed}</h4>
                     <p>{project.description}</p>
-                    <p>Links:&ensp; <a href={project.links.githubFront}>GitHub</a>&ensp;<a href={project.links.live}>Live </a></p>
+                    <p>Links:&ensp; <a href={project.links.githubFront}>GitHub</a>&ensp;{project.links.live && <a href={project.links.live}>Live </a>}</p>
                 </div>
             ))}
             </div>
