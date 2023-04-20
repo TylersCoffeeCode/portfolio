@@ -16,7 +16,7 @@ const Projects = ({id}) => {
             projectName: 'Esports Delight(Work-in-Progress)',
             img: eSports,
             technologyUsed: 'React | PostgreSQL | Express | Node | JavaScript',
-            description: 'Discover a mouth-watering world of culinary delights with our user-generated recipe platform, where you can not only explore a vast array of recipes but also create your own unique dishes to share with others by simply signing up for an account with JWT Auth.',
+            description: 'View the most current tech news and catch up on your favorite esports tournaments. Create an account and post on our esports media feed',
             links: {
                 githubFront: 'https://github.com/TylersCoffeeCode/Esports-delight',
                 live: 'https://esports-delight-be.herokuapp.com/'
