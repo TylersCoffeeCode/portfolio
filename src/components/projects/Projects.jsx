@@ -68,7 +68,7 @@ const Projects = ({id}) => {
             technologyUsed: 'HTML, CSS, JavaScript',
             description: 'A simple JavaScript application to play the classic game of tic tac toe',
             links: {
-                githubFront: 'https://github.com/AdamMontemurro/sous_chef_client',
+                githubFront: '',
             } 
         }
     ]
